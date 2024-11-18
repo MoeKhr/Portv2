@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+.et-hero-tabs,
+.et-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  position: relative;
+  background: #eee;
+  text-align: center;
+  padding: 0 2em;
+}
+
+.et-hero-tabs h1,
+.et-slide h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1rem;
+}
+
+.et-hero-tabs h3,
+.et-slide h3 {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.6;
+}
+
+.et-hero-tabs-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  z-index: 10;
+}
+
+.et-hero-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #000;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 0.8rem;
+}
+
+.et-hero-tab:hover {
+  color: white;
+  background: rgba(102, 177, 241, 0.8);
+  transition: all 0.5s ease;
+}
+
+.et-hero-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #66B1F1;
+  transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+  .et-hero-tabs,
+  .et-slide {
+  h1 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  }
+  .et-hero-tab {
+  font-size: 1rem;
+  }
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column .nav p{
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  }
+}
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+  border-radius: 4px;
+}
+
+
+
+.one {
+  background: rgb(2,0,36);
+  background: linear-gradient(313deg, rgba(194,251,255,1) 0%, rgba(182,223,255,1) 82%, rgb(224, 220, 2) 100%); 
+}
+
+.two {
+  background: rgb(2,0,36);
+  background: linear-gradient(313deg, rgba(194,251,255,1) 0%, rgba(182,223,255,1) 82%, rgb(105, 220, 255) 100%); 
+}
+
+.three {
+  background: rgb(2,0,36);
+  background: linear-gradient(313deg, rgba(194,251,255,1) 0%, rgba(182,223,255,1) 82%, rgb(224, 172, 2) 100%); 
+}
+
+.fa {font-size:60px;}
+
+#btt {
+  position: fixed;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  bottom: 0;
+  right: 0;
+  opacity: 0.8;
+  width: 50px;
+  transition: margin-bottom 0.6s, opacity 0.6s;
+  border: solid 4px white;
+  
+  border-radius: 40px;
+}
+
+
+#btt:hover {
+  margin-bottom: 25px;
+  opacity: 1;
+  transition: margin-bottom 0.6s, opacity 0.6s;
+  background-color: #ffffff;
+}
+
+
+#press {
+  width: 60px;
+  border: solid 4px white;
+  border-radius: 40px;
+  margin-top: 20%;
+  transition: background-color 0.6s, opacity 0.6s, margin-top 1s;
+}
+
+#press:hover {
+  background-color: #ffffff;
+  opacity: 0.8;
+  margin-top: 21%;
+  transition: background-color 0.6s, opacity 0.6s, margin-top 1s;
+}
+
+#page-one {
+  font-family: 'Roboto', sans-serif;
+  color: #FCFFFF;
+  background: url(images/soothing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  padding: 5%;
+}
+
+#page-one h1{
+  font-size: 70pt;
+  font-weight: bold;
+}
+#page-one h3{
+  font-size: 30pt;
+}
+
+#about{
+  background: rgb(194,251,255);
+  background: linear-gradient(0deg, rgba(194,251,255,1) 0%, rgba(182,223,255,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  padding: 5%;
+}
+
+#about h1{
+  font-family: 'roboto', sans-serif;
+  font-size: 40pt;
+  font-weight: bold;
+  text-align: left;
+}
+
+#about p{
+  font-family: 'roboto', sans-serif;
+  text-align: left;
+  
+}
+
+#about #email a{
+  text-align: left;
+  width: 25px;
+}
+
+#email{
+  background: rgb(137, 242, 250);
+background: linear-gradient(0deg, rgb(133, 240, 248) 0%, rgba(182,223,255,1) 100%);
+  padding: 2% 2% 2% 2%;
+  border-radius: 40px;
+  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+}
+
+#portScroll{
+  background: rgb(194,251,255);
+background: linear-gradient(0deg, rgba(194,251,255,1) 0%, rgba(182,223,255,1) 100%);
+  padding: 2% 2% 2% 2%;
+  border-radius: 40px;
+  margin-left: 2%;
+  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+}
+
+#about #portScroll a {
+  text-align: left;
+  margin-right: 5px;
+  width: 18px;
+}
+
+#portScroll a,
+#portScroll a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+#email:hover,
+#portScroll:hover {
+  box-shadow: 5px 15px 30px #34e4ff;
+  background-color: #34e4ff;
+  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+  cursor: pointer;
+}
+
+#skills{
+  font-family: 'Roboto', sans-serif;
+  background: rgb(194,251,255);
+  background: linear-gradient(0deg, rgba(194,251,255,1) 0%, rgba(182,223,255,1) 100%);
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  padding: 5% 5% 5% 5%;
+  width: auto;
+  height: 100vh;
+}
+
+#skills h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15pt;
+}
+
+
